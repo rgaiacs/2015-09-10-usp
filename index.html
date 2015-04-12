@@ -42,7 +42,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 </iframe>
 {% endif %}
 
-<h2>General Information</h2>
+<h2>Informações gerais</h2>
 
 <!--
   INTRODUCTION
@@ -51,19 +51,19 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
+  A missão da <a href="//software-carpentry.org">Software Carpentry</a>
+  é ajudar cientistas e engenheiros a serem mais produtivos com menos sofrimento
+  ao ensinar práticas laboratoriais para computação científica.
+  Esse workshop prático irá cobrir
+  conceitos e ferramentas, incluindo design de programas, controle de versão,
+  gerenciamento de dados e automação de tarefas.
+  Participantes são encorajados a se ajudarem
+  e aplicarem o que eles aprenderem em suas próprias pesquisas.
 </p>
 <p align="center">
   <em>
-    For more information on what we teach and why,
-    please see our paper
+    Para mais informações sobre o que ensinamos e porque,
+    leia nosso artigo
     "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
   </em>
 </p>
@@ -75,8 +75,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   workshop is only open to people from a particular institution.
 -->
 <p>
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  <strong>Quem:</strong>
+  Este curso é destinado alunos de graduação, pós-graduação e outros pesquisadores.
 </p>
 
 <!--
@@ -89,11 +89,11 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 -->
 {% if page.latlng %}
 <p>
-  <strong>Where:</strong>
+  <strong>Onde:</strong>
   {{page.address}}.
-  Get directions with
+  Obtenha direções em
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
+  ou
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
@@ -104,11 +104,12 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with
-  a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Software Carpentry's
-  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+  <strong>Requerimentos:</strong>
+  Participantes devem trazer seu próprio notebook
+  com os programas listados <a href="#setup">abaixo</a> já instalados.
+  Participantes também precisam aceitar
+  o <a href="{{site.swc_site}}/conduct.html">Código de Conduta</a>.
+  da Software Carpentry.
 </p>
 
 <!--
@@ -119,14 +120,14 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   used.
 -->
 <p>
-  <strong>Contact</strong>:
-  Please mail
+  <strong>Contato</strong>:
+  Por favor, envie um email para
   {% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
+  com suas dúvidas.
 </p>
 
 <hr/>
@@ -138,29 +139,25 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2>Schedule</h2>
+<h2>Programação</h2>
 
-<div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
+<div class="row-fluid">
+  <div class="span6">
+    <h3>Dia 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td> <td>Automatização de tarefas com o terminal Unix</td> </tr>
+      <tr> <td>12:00</td> <td>Intervalo para almoço</td> </tr>
+      <tr> <td>13:00</td> <td>Construindo programas com Python</td> </tr>
+      <tr> <td>16:00</td> <td>Revisão</td> </tr>
     </table>
   </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
+  <div class="span6">
+    <h3>Dia 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td> <td>Controle de Versão com Git</td> </tr>
+      <tr> <td>12:00</td> <td>Intervalo para almoço</td> </tr>
+      <tr> <td>13:00</td> <td>Mais exemplos de programas em Python</td> </tr>
+      <tr> <td>16:00</td> <td>Revisão</td> </tr>
     </table>
   </div>
 </div>
@@ -181,7 +178,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 <p>
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  Iremos utilizar o Etherpad listado acima para chat,
+  anotações e compartilhamento de links e pequenos pedaços de código.
 </p>
 {% endif %}
 
@@ -204,44 +202,44 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2>Syllabus</h2>
+<h2>Resumo</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>The Unix Shell</h3>
+    <h3>Unix Shell</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
+      <li>Arquivos e diretórios</li>
+      <li>Histórico e tab completion</li>
+      <li>Pipes e redirecionamento</li>
+      <li>Laços sobre arquivo</li>
+      <li>Criando e executando shell scripts</li>
+      <li>Encontrando "coisas"</li>
+      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Referências...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Programming in Python</h3>
+    <h3>Programação em Python</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
+      <li>Usando bibliotecas/pacotes</li>
+      <li>Trabalhando com vetores</li>
+      <li>Lendo e visualizando dados</li>
+      <li>Criando e usando funções</li>
+      <li>Laços e condicionais</li>
+      <li>Programação defensiva</li>
+      <li>Usando Python pela linha de comando</li>
+      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Referências...</a></li>
     </ul>
   </div>
   <!--
   <div class="col-md-6">
     <h3>Programming in R</h3>
     <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
+      <li>Trabalhando com vetores e data frames</li>
+      <li>Lendo e visualizando dados</li>
+      <li>Criando e usando funções</li>
+      <li>Laços e condicionais</li>
+      <li>Usando R pela linha de comando</li>
+      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Referências...</a></li>
     </ul>
   </div>
   -->
@@ -249,31 +247,31 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Version Control with Git</h3>
+    <h3>Controle de versão com Git</h3>
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
+      <li>Criação de repositórios</li>
+      <li>Salvando mudanças de arquivos: <code>add</code>, <code>commit</code>, ...</li>
+      <li>Visualizando mudanças: <code>status</code>, <code>diff</code>, ...</li>
+      <li>Ignorando arquivos</li>
+      <li>Trabalhando na internet: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+      <li>Resolvendo conflitos</li>
+      <li>Licenças Abertas</li>
+      <li>Onde hospedar seu trabalho e porque</li>
+      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Referências...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
+    <h3>Gerenciando dados com SQL</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
+      <li>Lendo e ordenando dados</li>
+      <li>Filtrando com <code>where</code></li>
+      <li>Calculando novos valores "on the fly"</li>
+      <li>Lidando com valores perdidos</li>
+      <li>Combinando valores</li>
+      <li>Combinando tabelas</li>
+      <li>Criando, modificando e deletando dados</li>
+      <li>Programação com banco de dados</li>
+      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Referências...</a></li>
     </ul>
   </div>
 </div>
@@ -295,111 +293,110 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, you will need 
-  access to the software described below. In addition, you will 
-  need an up-to-date web browser.
-  Once you are done installing the software listed below,
-  please go to <a href="setup/index.html">this page</a>,
-  which has instructions on how to test that everything was installed correctly.
+  Para participar de um workshop da Software Carpentry,
+  você vai precisar dos seguintes programas instalados.
+  Além dos softwares listados,
+  você precisa de um navegador web atual.
+  Depois de instalar os software indicados,
+  visite <a href="setup/index.html">essa página</a>,
+  que possui instruções de como testar
+  se os programas foram instalados corretamente.
 </p>
 
 <div id="editor"> <!-- Start of 'editor' section. -->
-  <h3>Text Editor</h3>
-
+  <h3>Editor</h3>
   <p>
-    When you're writing code, it's nice to have a text editor that is
-    optimized for writing code, with features like automatic
-    color-coding of key words.  The default text editor on Mac OS X and
-    Linux is usually set to Vim, which is not famous for being
-    intuitive.  if you accidentally find yourself stuck in it, try
-    typing the escape key, followed by ':q!' (colon, lower-case 'q',
-    exclamation mark), then hitting Return to return to the shell.
+    Quando você está escrevendo um código, é interessante ter um editor de
+    texto otimizado para a escrita de código, com funcionalidades como
+    utilização de cores para palavras chaves. O editor padrão no Mac OS X e
+    Linux é o Vim, que não é famoso por ser intuitivo.
+    Se você acidentalmente encontrar-se preso nele,
+    tente pressionar <code>ESC</code>, digitar <code>:q!</code> e pressionar <code>ENTER</code>
+    para retornar à linha de comando.
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
       <p>
-	<code>nano</code> is the editor installed by the Software
-	Carpentry Installer, it is a basic editor integrated into the
-	lesson material.
+        <code>nano</code> é o editor instalado pelo instalador da Software
+        Carpentry. Ele é um editor básico utilizado nas lições.
       </p>
       <p>
-	<a href="http://notepad-plus-plus.org/">Notepad++</a> is a
-	popular free code editor for Windows.  Be aware that you must
-	add its installation directory to your system path in order to
-	launch it from the command line (or have other tools like Git
-	launch it for you).  Please ask your instructor to help you do
-	this.
+        <a href="http://notepad-plus-plus.org/">Notepad++</a> é outro popular
+        editor livre para Windows. Depois de instalá-lo você precisa adicionar o
+        diretório onde ele foi instalado no <em>path</em> do seu sistema para que
+        possa invocá-lo pela linha de comando (ou para que outros programas como
+        Git invoque-o por você). Por favor requisite ajuda dos instrutores para
+        fazer isso.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="editor-macosx">Mac OS X</h4>
       <p>
-	We recommend
-	<a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
-	<a href="http://www.sublimetext.com/">Sublime Text</a>.
-	In a pinch, you can use <code>nano</code>,
-	which should be pre-installed.
+        Nos recomendamos
+        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> ou
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+        Você também pode utilizar o <code>nano</code> que deveria estar instalado
+        por padrão.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="editor-linux">Linux</h4>
       <p>
-	<a href="http://kate-editor.org/">Kate</a> is one option for
-	Linux users.  In a pinch, you can use <code>nano</code>, which
-	should be pre-installed.
+        <a href="http://kate-editor.org/">Kate</a> é uma das várias opções para os
+        usuários de Linux.
+        Você também pode utilizar <code>nano</code> que deveria estar
+        pré-instalado.
       </p>
     </div>
   </div>
 </div> <!-- End of 'editor' section. -->
 
 <div id="shell"> <!-- Start of 'shell' section. -->
-  <h3>The Bash Shell</h3>
+  <h3>Bash Shell</h3>
 
   <p>
-    Bash is a commonly-used shell that gives you the power to do simple
-    tasks more quickly.
+    Bash é o terminal comumente utilizado. Utilizar um terminal lhe permite
+    fazer tarefas mais complexas de forma mais rápida no seu computador.
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
       <p>
-	Install Git for Windows by downloading and running
-	<a href="http://msysgit.github.io/">the installer</a>.
-	This will provide you with both Git and Bash in the Git Bash program.
+        Baixe e instale 
+        <a href="http://msysgit.github.io/">Git for Windows</a>.
+        Ele irá disponibilizar Git e Bash no seu computador.
       </p>
-      <h4>Software Carpentry Windows Installer</h4>
-      <p>It installs and configures <code>nano</code> (<a href="{{site.swc_github}}/windows-installer">Among other things</a>)</p>
-      <p><em>This installer requires an active internet connection.</em></p>
-      <p>After installing Git Bash:</p>
+      <h4>Instalador da Software Carpentry</h4>
+      <p>Ele instala e configura o <code>nano</code> (<a href="{{site.swc_github}}/windows-installer">e outras coisas</a>)</p>
+      <p><em>Esse instalador precisa que uma conexão de internet.</em></p>
+      <p>Depois de instalar Git Bash:</p>
       <ul>
-	<li>
-          Download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>.
-	</li>
-	<li>
-          Double click on the file to run it.
-	</li>
+        <li>
+          Baixe <a href="{{site.windows_installer_path}}">Software Carpentry Windows Installer</a>.
+        </li>
+        <li>
+          Click duas vezes no arquivo para executá-lo.
+        </li>
       </ul>
     </div>
     <div class="col-md-4">
       <h4 id="shell-macosx">Mac OS X</h4>
       <p>
-	The default shell in all versions of Mac OS X is bash, so no
-	need to install anything.  You access bash from the Terminal
-	(found in
-	<code>/Applications/Utilities</code>).  You may want to keep
-	Terminal in your dock for this workshop.
+        O terminal padrão em todas as versões do Mac OS X é o bash e portanto você
+        não precisa instalar nada. Você pode acessar o bash pelo Terminal
+        encontrado em <code>/Applications/Utilities</code>. Você provavelmente vai
+        querer manter o Terminal no dock da sua área de trabalho.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="shell-linux">Linux</h4>
       <p>
-	The default shell is usually <code>bash</code>, but if your
-	machine is set up differently you can run it by opening a
-	terminal and typing <code>bash</code>.  There is no need to
-	install anything.
+        O terminal padrão normalmente é <code>bash</code> e você não precisa
+        instalar nada.  Se sua máquina estiver configurada de maneira diferente
+        você pode abrir um terminal e digitar <code>bash</code>.
       </p>
     </div>
   </div>
@@ -410,45 +407,51 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   <h3>Git</h3>
 
   <p>
-    Git is a version control system that lets you track who made changes
-    to what when and has options for easily updating a shared or public
-    version of your code
-    on <a href="https://github.com/">github.com</a>. You will need a
-    <a href="https://help.github.com/articles/supported-browsers/">supported</a>
-    web browser (current versions of Chrome, Firefox or Safari,
-    or Internet Explorer version 9 or above).
+    Git é um sistema de controle de versão
+    que permite você manter registro de quem faz uma alteração
+    em qual arquivo e quando
+    além de possuir opções para facilmente atualizar seu código
+    em <a href="https://github.com/">github.com</a>.
+    Você vai precisar de um navegador web
+    <a href="https://help.github.com/articles/supported-browsers/">suportado</a>
+    (versões atuais do Chrome, Firefox ou Safari,
+    ou Internet Explorer 9 ou superior).
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="git-windows">Windows</h4>
       <p>
-	Git should be installed on your computer as part of your Bash
-	install (described above).
+        Git deve estar instalado no seu computador como parte da instalação do
+        Bash (descrito acima).
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="git-macosx">Mac OS X</h4>
       <p>
-	<strong>For OS X 10.8 and higher</strong>, install Git for Mac
-	by downloading and running
-	<a href="http://sourceforge.net/projects/git-osx-installer/files/latest/download">the installer</a>.
-	After installing Git, there will not be anything in your <code>/Applications</code> folder, 
-	as Git is a command line program.
-	<strong>For older versions of OS X (10.5-10.7)</strong> use the
-	most recent available installer for your
-	OS <a href="http://sourceforge.net/projects/git-osx-installer/files/">available
-	  here</a>.  Use the Leopard installer for 10.5 and the Snow
-	Leopard installer for 10.6-10.7.
+	<strong>Para OS X 10.8 e superior</strong>,
+        instale Git para Mac
+        baixando e executando
+	<a href="http://sourceforge.net/projects/git-osx-installer/files/latest/download">esse instalador</a>.
+        Depois de instalar Git, não existirá nenhum atalho no seu diretório <code>/Applications</code>
+        pois Git é um programa de linha de comando.
+      </p>
+      <p>
+	<strong>Para versões antigas do OS X (10.5-10.7)</strong>
+        utilize o instalador mais recente para a sua máquina
+	<a href="http://sourceforge.net/projects/git-osx-installer/files/">disponível em</a>.
+        Utilize o instalador para Leopard para 10.5
+        e o Snow Leopard para 10.6-10.7.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="git-linux">Linux</h4>
       <p>
-	If Git is not already available on your machine you can try to
-	install it via your distro's package manager. For Debian/Ubuntu run
-        <code>sudo apt-get install git</code> and for Fedora run
-        <code>sudo yum install git</code>.
+        Se Git ainda não encontra-se disponível na sua máquina você pode
+        instalá-lo via o gerenciador de pacotes da sua distribuição
+        Para Debian/Ubuntu execute
+        <code>sudo apt-get install git</code>
+        e para Fedora execute <code>sudo yum install git</code>.
       </p>
     </div>
   </div>
@@ -461,42 +464,44 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   <h3>Python</h3>
 
   <p>
-    <a href="http://python.org">Python</a> is a popular language for
-    scientific computing, and great for general-purpose programming as
-    well.  Installing all of its scientific packages individually can be
-    a bit difficult, so we recommend an all-in-one installer.
+    <a href="http://python.org">Python</a> é uma linguagem popular para computação científica,
+    e ótima também para programação de propósito geral.
+    Instalar todos os pacotes científicos individualmente
+    pode ser um pouco difícil
+    e por isso recomendamos utilizar um instalador "tudo-em-um".
   </p>
 
-    <p>
-      Regardless of how you choose to install it,
-      <strong>please make sure you install Python version 2.x and not version 3.x</strong>
-      (e.g., 2.7 is fine but not 3.4).
-      Python 3 introduced changes that will break some of the code we teach during the workshop.
-    </p>
+  <p>
+    Independente de como você escolher instalá-lo,
+    <strong>certifique-se de instalar Python na versão 2.x e não a versão 3.x</strong>
+    (e.g., 2.7 é OK mas não 3.4).
+    Python 3 introduz mudanças que irão quebrar alguns dos exemplos que
+    utilizamos no workshop.
+  </p>
 
-    <p>
-      We will teach Python using the IPython notebook, a programming environment
-      that runs in a web browser. For this to work you will need a reasonably
-      up-to-date browser. The current versions of the Chrome, Safari and
-      Firefox browsers are all <a 
-      href='http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility'>supported</a> 
-      (some older browsers, including Internet Explorer version 9 
-      and below, are not).
-    </p>
+  <p>
+    Iremos ensinar Python utilizando o IPython notebook,
+    um ambiente de programação utilizado através do navegador web.
+    Para que isso funcione
+    você vai precisar de um navegador web recente.
+    As versões atuais do Chrome, Safari e Firefox são todos
+    <a href='http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility'>suportados</a> 
+    (navegadores web antigos,
+    incluindo Internet Explorer 9 e inferior não são).
+  </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
       <ul>
 	<li>
-          Download and
-          install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
+          Baixe e instale <a href="http://continuum.io/anacondace.html">Anaconda CE</a>.
 	</li>
 	<li>
-          Download the default Python 2 installer (do not follow the link to version 3).
-	  Use all of the defaults for installation
-          <em>except</em> make sure to check
-	  <strong>Make Anaconda the default Python</strong>.
+          Baixe o instalado do Python 2 (não siga o link para a versão 3).
+          Utilize todas as opções padrões de instalação
+          <em>exceto</em>
+	  <strong>Fazer Anaconda seu interpretador Python padrão</strong>.
 	</li>
       </ul>
     </div>
@@ -504,47 +509,48 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <h4 id="python-macosx">Mac OS X</h4>
       <ul>
 	<li>
-          Download and
-          install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
+          Baixe e instale
+          <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
 	</li>
 	<li>
-          Download the default Python 2 installer (do not follow the link to version 3).
-	  Use all of the defaults for installation.
+          Baixe o instalado do Python 2 (não siga o link para a versão 3).
+          Utilize todas as opções padrões de instalação.
 	</li>
       </ul>
     </div>
     <div class="col-md-4">
       <h4 id="python-linux">Linux</h4>
       <p>
-	We recommend the all-in-one scientific Python installer
+        Recomendamos o instalador "todo-em-um"
 	<a href="http://continuum.io/downloads.html">Anaconda</a>.
-	(Installation requires using the shell and if you aren't
-	comfortable doing the installation yourself just
-	download the installer and we'll help you at the boot
-	camp.)
+	(A instalação requerer o uso do shell
+        e se você não estiver confortável
+        baixe o instalador
+        e vamos lhe ajudar a instalá-lo no workshop.)
       </p>
       <ol>
 	<li>
-          Download the installer that matches your operating
-          system and save it in your home folder.
-	  Download the default Python 2 installer (do not follow the link to version 3). 
+          Baixe o instalador correspondente ao seu sistema operacional
+          e salve-o no seu diretório de usuário.
+          Baixe o instalado do Python 2 (não siga o link para a versão 3).
 	</li>
 	<li>
-          Open a terminal window.
+          Abra um terminal.
 	</li>
 	<li>
-          Type <pre>bash Anaconda-</pre> and then press
-          tab. The name of the file you just downloaded should
-          appear.
+          Digite <pre>bash Anaconda-</pre>
+          e pressione a tecla <code>TAB</code>.
+          O nome do arquivo será completado.
 	</li>
 	<li>
-          Press enter. You will follow the text-only prompts.  When
-          there is a colon at the bottom of the screen press the down
-          arrow to move down through the text. Type <code>yes</code> and
-          press enter to approve the license. Press enter to approve the
-          default location for the files. Type <code>yes</code> and
-          press enter to prepend Anaconda to your <code>PATH</code>
-          (this makes the Anaconda distribution the default Python).
+          Pressione <code>ENTER</code>.
+          Siga as instruções que aparecerem no terminal.
+          Quando aparecer dois pontos no fim da tela pressione a seta direcional
+          para baixo até obter o fim do texto. Digite <code>yes</code> e pressione
+          enter para aceitar a licença. Pressione enter para aceitar o diretório
+          padrão para a instalação. Digite <code>yes</code> e pressione enter para
+          adicionar Anaconda ao seu <code>PATH</code> (isso irá tornar Anaconda
+          seu interpretador Python padrão).
 	</li>
       </ol>
     </div>
@@ -555,9 +561,9 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   <h3>R</h3>
 
   <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
+    <a href="http://www.r-project.org">R</a> é uma linguagem de programação
+    que é particularmente poderosa para exploração de dados, visualização, e
+    análises estatísticas. Para interagir com R, nós utilizaremos o
     <a href="http://www.rstudio.com/">RStudio</a>.
   </p>
 
@@ -565,31 +571,31 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     <div class="col-md-4">
       <h4 id="r-windows">Windows</h4>
       <p>
-	Install R by downloading and running
-	<a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Also, please install the
+	Instale R baixando e rodando
+	<a href="http://cran.r-project.org/bin/windows/base/release.htm">este arquivo .exe</a>
+	disponível no <a href="http://cran.r-project.org/index.html">CRAN</a>.
+	Além disso, por favor instale o
 	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="r-macosx">Mac OS X</h4>
       <p>
-	Install R by downloading and running
-	<a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Also, please install the
+	Instale o R baixando e rodando
+	<a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">este arquivo .pkg</a>
+	disponível no <a href="http://cran.r-project.org/index.html">CRAN</a>.
+	Além disso, por favor instale o
 	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="r-linux">Linux</h4>
       <p>
-	You can download the binary files for your distribution
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-	you can use your package manager (e.g. for Debian/Ubuntu
-	run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
+	Você pode baixar os arquivos binários para sua distribuição particular
+	em <a href="http://cran.r-project.org/index.html">CRAN</a>. Ou
+	você pode utilizar seu "package manager" (e.g. para Debian/Ubuntu
+	rode <code>sudo apt-get install r-base</code> e para Fedora rode
+        <code>sudo yum install R</code>). Além disso, por favor instale o
 	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
@@ -600,30 +606,32 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   <h3>SQLite</h3>
 
   <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
+    SQL é uma linguagem de programação especializada para bancos de dados.
+    Nós utilizaremos um gerenciador simples para banco de dados chamado
+    <a href="http://www.sqlite.org/">SQLite</a>
+    na nossa lição.
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="sql-windows">Windows</h4>
       <p>
-      The <a href="{{site.swc_github}}/windows-installer">Software Carpentry
-          Windows Installer</a> installs <code>sqlite3</code> for Windows. If
-      you used the installer to configure `nano`, you don't need to run it again.
+      O <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
+      instala o <code>sqlite3</code> para Windows.
+      Se você tiver utilizado o instalador para configurar o nano,
+      você não precisa instalá-lo novamente.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="sql-macosx">Mac OS X</h4>
       <p>
-	<code>sqlite3</code> comes pre-installed on Mac OS X.
+	<code>sqlite3</code> é por padrão pré-instalado no Mac OS X.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="sql-linux">Linux</h4>
       <p>
-	<code>sqlite3</code> comes pre-installed on Linux.
+	<code>sqlite3</code> é por padrão pré-instalado no Linux.
       </p>
     </div>
   </div>
