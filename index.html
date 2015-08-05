@@ -1,18 +1,18 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site
-address: FIXME    # street address of home location
-country: FIXME    # country (hyphenated if need be, like 'United-Kingdom')
-language: FIXME   # language code like 'en' or 'fr'
+venue: Universidade de São Paulo
+address: A ser definido
+country: Brazil
+language: pt
 latlng: FIXME     # fractional latitude and longitude like 41.7901128,-87.6007318
 humandate: FIXME  # use the format 'Feb 17-18, 2020' (without the quotes)
 humantime: FIXME  # use the format '9:00 am - 4:30 pm' (without the quotes)
 startdate: FIXME  # use YYYY-MM-DD format like 2015-01-01
 enddate: FIXME    # use YYYY-MM-DD format like 2015-01-02
-instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer
+instructor: ["Raniere Silva", "Luciano Ramalho"]
+helper: ["Anna Penna", " Barbara Costa", "Diego Rabatone Oliveira", "Haydee Svab", "Yuri Teixeira"]
+contact: raniere@rgaiacs.com
 etherpad:   # optional (insert the URL for your Etherpad if you're using one)
 eventbrite: # optional (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
 ---
@@ -141,6 +141,11 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
 -->
 <h2>Programação</h2>
 
+<p>
+  Seguiremos a mesma programação do workshop realizado no
+  <a href="https://bids.github.io/2015-06-04-berkeley/">Berkeley Institute for Data Science</a>
+</p>
+
 <div class="row-fluid">
   <div class="span6">
     <h3>Dia 1</h3>
@@ -156,7 +161,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
     <table class="table table-striped">
       <tr> <td>09:00</td> <td>Controle de Versão com Git</td> </tr>
       <tr> <td>12:00</td> <td>Intervalo para almoço</td> </tr>
-      <tr> <td>13:00</td> <td>Mais exemplos de programas em Python</td> </tr>
+      <tr> <td>13:00</td> <td>Testando programas em Python</td> </tr>
       <tr> <td>16:00</td> <td>Revisão</td> </tr>
     </table>
   </div>
@@ -207,7 +212,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
 <h2>Resumo</h2>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Unix Shell</h3>
     <ul>
       <li>Arquivos e diretórios</li>
@@ -219,7 +224,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
       <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Referências...</a></li>
     </ul>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Programação em Python</h3>
     <ul>
       <li>Usando bibliotecas/pacotes</li>
@@ -232,23 +237,7 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
       <li><a href="{{site.swc_lessons}}/ref/03-python.html">Referências...</a></li>
     </ul>
   </div>
-  <!--
-  <div class="col-md-6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Trabalhando com vetores e data frames</li>
-      <li>Lendo e visualizando dados</li>
-      <li>Criando e usando funções</li>
-      <li>Laços e condicionais</li>
-      <li>Usando R pela linha de comando</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Referências...</a></li>
-    </ul>
-  </div>
-  -->
-</div>
-
-<div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Controle de versão com Git</h3>
     <ul>
       <li>Criação de repositórios</li>
@@ -260,20 +249,6 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
       <li>Licenças Abertas</li>
       <li>Onde hospedar seu trabalho e porque</li>
       <li><a href="{{site.swc_lessons}}/ref/02-git.html">Referências...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3>Gerenciando dados com SQL</h3>
-    <ul>
-      <li>Lendo e ordenando dados</li>
-      <li>Filtrando com <code>where</code></li>
-      <li>Calculando novos valores "on the fly"</li>
-      <li>Lidando com valores perdidos</li>
-      <li>Combinando valores</li>
-      <li>Combinando tabelas</li>
-      <li>Criando, modificando e deletando dados</li>
-      <li>Programação com banco de dados</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Referências...</a></li>
     </ul>
   </div>
 </div>
@@ -620,115 +595,3 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
   which has instructions on how to test that everything was installed correctly.
   </p>
 </div> <!-- End of 'Python' section. -->
-
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> é uma linguagem de programação
-    que é particularmente poderosa para exploração de dados, visualização, e
-    análises estatísticas. Para interagir com R, nós utilizaremos o
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <p>
-        Instale R baixando e rodando
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">este arquivo .exe</a>
-        disponível no <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Além disso, por favor instale o
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <p>
-        Instale o R baixando e rodando
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">este arquivo .pkg</a>
-        disponível no <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Além disso, por favor instale o
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        Você pode baixar os arquivos binários para sua distribuição particular
-        em <a href="http://cran.r-project.org/index.html">CRAN</a>. Ou
-        você pode utilizar seu "package manager" (e.g. para Debian/Ubuntu
-        rode <code>sudo apt-get install r-base</code> e para Fedora rode
-        <code>sudo yum install R</code>). Além disso, por favor instale o
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL é uma linguagem de programação especializada para bancos de dados.
-    Nós utilizaremos um gerenciador simples para banco de dados chamado
-    <a href="http://www.sqlite.org/">SQLite</a>
-    na nossa lição.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        O <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
-        instala o SQLite para Windows.
-        Se você tiver utilizado o instalador para configurar o nano,
-        você não precisa instalá-lo novamente.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-        SQLite é por padrão pré-instalado no Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite é por padrão pré-instalado no Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>Se você instalou Anaconda, ele possui uma cópia do SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">sem suporte ao<code>readline</code></a>.
-    Instrutores irão fornecer instruções de como contornar essa limitação caso seja necessário.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
-
-<!--
-  Uncomment this section if you are using our virtual machine.
-
-<div id="vm">
-  <h3>Virtual Machine</h3>
-
-  <p>
-    Some instructors prefer to have learners use a virtual machine (VM)
-    rather than install software on their own computers.  If your
-    instructors have chosen to do this, please:
-  </p>
-  <ol>
-    <li>
-      Install <a href="https://www.virtualbox.org/">VirtualBox</a>.
-    </li>
-    <li>
-      Download our <a href="{{site.swc_vm}}">VM image</a>.
-      <strong>Warning:</strong> this file is 1.7 GByte, so please
-      download it <em>before</em> coming to your workshop.
-    </li>
-    <li>
-      Load the VM into VirtualBox by selecting "Import Appliance" and
-      loading the <code>.ova</code> file.
-    </li>
-  </ol>
-</div>
--->
