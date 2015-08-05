@@ -1,20 +1,20 @@
 ---
 layout: workshop
 root: .
-venue: FIXME (brief name of host site)
-address: FIXME (street address of home location)
-country: FIXME (country (hyphenated if need be, like 'United-Kingdom')
-language: FIXME (language code like 'en' or 'fr')
-latlng: (fractional latitude and longitude like 41.7901128,-87.6007318)
-humandate: FIXME (use the format 'Feb 17-18, 2020' (without the quotes)
-humantime: FIXME (use the format '9:00 am - 4:30 pm' (without the quotes)
-startdate: FIXME (use YYYY-MM-DD format like 2015-01-01)
-enddate: FIXME (use YYYY-MM-DD format like 2015-01-02)
-instructor: (list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"])
-helper: (list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"])
-contact: FIXME (contact email address for workshop organizer)
-etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
-eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
+venue: FIXME      # brief name of host site
+address: FIXME    # street address of home location
+country: FIXME    # country (hyphenated if need be, like 'United-Kingdom')
+language: FIXME   # language code like 'en' or 'fr'
+latlng: FIXME     # fractional latitude and longitude like 41.7901128,-87.6007318
+humandate: FIXME  # use the format 'Feb 17-18, 2020' (without the quotes)
+humantime: FIXME  # use the format '9:00 am - 4:30 pm' (without the quotes)
+startdate: FIXME  # use YYYY-MM-DD format like 2015-01-01
+enddate: FIXME    # use YYYY-MM-DD format like 2015-01-02
+instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: FIXME    # contact email address for workshop organizer
+etherpad:   # optional (insert the URL for your Etherpad if you're using one)
+eventbrite: # optional (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
 ---
 <!--
   HEADER
@@ -165,6 +165,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 <!--
   ETHERPAD
 
+  At `_misc/etherpad.txt` you will find a template for the etherpad.
+
   Display the Etherpad for the workshop.  You can set this up in
   advance or on the first day; either way, make sure you push changes
   to GitHub after you have its URL.  To create an Etherpad, go to
@@ -297,10 +299,11 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   você vai precisar dos seguintes programas instalados.
   Além dos softwares listados,
   você precisa de um navegador web atual.
-  Depois de instalar os software indicados,
-  visite <a href="setup/index.html">essa página</a>,
-  que possui instruções de como testar
-  se os programas foram instalados corretamente.
+</p>
+<p>
+  Mantemos uma lista de problemas recorrentes que ocorrem durante a instalação
+  como uma referência aos instrutores que pode ser útil na
+  <a href="https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">página wiki "Configuration Problems and Solutions"</a>.
 </p>
 
 <div id="editor"> <!-- Start of 'editor' section. -->
@@ -365,8 +368,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
       <p>
-        Baixe e instale 
-        <a href="http://msysgit.github.io/">Git for Windows</a>.
+        Instale Git para Windows baixando e executando
+        <a href="http://msysgit.github.io/">esse instalador</a>.
         Ele irá disponibilizar Git e Bash no seu computador.
       </p>
       <h4>Instalador da Software Carpentry</h4>
@@ -400,7 +403,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       </p>
     </div>
   </div>
-<div> <!-- End of 'shell' section. -->
+</div> <!-- End of 'shell' section. -->
 
 <div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
@@ -429,19 +432,18 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     <div class="col-md-4">
       <h4 id="git-macosx">Mac OS X</h4>
       <p>
-	<strong>Para OS X 10.8 e superior</strong>,
+        <strong>Para OS X 10.9 e superior</strong>,
         instale Git para Mac
-        baixando e executando
-	<a href="http://sourceforge.net/projects/git-osx-installer/files/latest/download">esse instalador</a>.
+        baixando e executando a versão mais recente do instalador "mavericks"
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">dessa lista</a>.
         Depois de instalar Git, não existirá nenhum atalho no seu diretório <code>/Applications</code>
         pois Git é um programa de linha de comando.
       </p>
       <p>
-	<strong>Para versões antigas do OS X (10.5-10.7)</strong>
-        utilize o instalador mais recente para a sua máquina
-	<a href="http://sourceforge.net/projects/git-osx-installer/files/">disponível em</a>.
-        Utilize o instalador para Leopard para 10.5
-        e o Snow Leopard para 10.6-10.7.
+        <strong>Para versões antigas do OS X (10.5-10.8)</strong>
+        utilize o instalador mais recente
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">disponível aqui</a>
+        que esteja marcado com "snow-leopard".
       </p>
     </div>
     <div class="col-md-4">
@@ -456,6 +458,66 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </div>
   </div>
 </div> <!-- End of 'Git' section. -->
+
+<div id="editor"> <!-- Start of 'editor' section. -->
+  <h3>Text Editor</h3>
+
+  <p>
+    When you're writing code, it's nice to have a text editor that is
+    optimized for writing code, with features like automatic
+    color-coding of key words.  The default text editor on Mac OS X and
+    Linux is usually set to Vim, which is not famous for being
+    intuitive.  if you accidentally find yourself stuck in it, try
+    typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
+    exclamation mark), then hitting Return to return to the shell.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="editor-windows">Windows</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        To install it, 
+        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
+        and double click on the file to run it.
+        <strong>This installer requires an active internet connection.</strong>
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+        <strong>Be aware that you must
+          add its installation directory to your system path.</strong>
+        Please ask your instructor to help you do this.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-macosx">Mac OS X</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        It should be pre-installed.
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-linux">Linux</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        It should be pre-installed.
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
+        <a href="http://kate-editor.org/">Kate</a> or
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'editor' section. -->
 
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
@@ -473,10 +535,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 
   <p>
     Independente de como você escolher instalá-lo,
-    <strong>certifique-se de instalar Python na versão 2.x e não a versão 3.x</strong>
-    (e.g., 2.7 é OK mas não 3.4).
-    Python 3 introduz mudanças que irão quebrar alguns dos exemplos que
-    utilizamos no workshop.
+    <strong>certifique-se de instalar Python na versão 3.x e não a versão 2.x</strong>
   </p>
 
   <p>
@@ -494,55 +553,55 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
       <ul>
-	<li>
-          Baixe e instale <a href="http://continuum.io/anacondace.html">Anaconda CE</a>.
-	</li>
-	<li>
-          Baixe o instalado do Python 2 (não siga o link para a versão 3).
+        <li>
+          Baixe e instale <a href="http://continuum.io/anacondace.html">Anaconda</a>.
+        </li>
+        <li>
+          Baixe o instalado do Python 3.
           Utilize todas as opções padrões de instalação
           <em>exceto</em>
-	  <strong>Fazer Anaconda seu interpretador Python padrão</strong>.
-	</li>
+          <strong>Fazer Anaconda seu interpretador Python padrão</strong>.
+        </li>
       </ul>
     </div>
     <div class="col-md-4">
       <h4 id="python-macosx">Mac OS X</h4>
       <ul>
-	<li>
+        <li>
           Baixe e instale
           <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
-	</li>
-	<li>
-          Baixe o instalado do Python 2 (não siga o link para a versão 3).
+        </li>
+        <li>
+          Baixe o instalado do Python 3.
           Utilize todas as opções padrões de instalação.
-	</li>
+        </li>
       </ul>
     </div>
     <div class="col-md-4">
       <h4 id="python-linux">Linux</h4>
       <p>
         Recomendamos o instalador "todo-em-um"
-	<a href="http://continuum.io/downloads.html">Anaconda</a>.
-	(A instalação requerer o uso do shell
+        <a href="http://continuum.io/downloads.html">Anaconda</a>.
+        (A instalação requerer o uso do shell
         e se você não estiver confortável
         baixe o instalador
         e vamos lhe ajudar a instalá-lo no workshop.)
       </p>
       <ol>
-	<li>
+        <li>
           Baixe o instalador correspondente ao seu sistema operacional
           e salve-o no seu diretório de usuário.
-          Baixe o instalado do Python 2 (não siga o link para a versão 3).
-	</li>
-	<li>
+          Baixe o instalado do Python 3.
+        </li>
+        <li>
           Abra um terminal.
-	</li>
-	<li>
+        </li>
+        <li>
           Digite <pre>bash Anaconda-</pre>
           e pressione a tecla <code>TAB</code>.
           O nome do arquivo será completado.
-	</li>
-	<li>
+        </li>
+        <li>
           Pressione <code>ENTER</code>.
           Siga as instruções que aparecerem no terminal.
           Quando aparecer dois pontos no fim da tela pressione a seta direcional
@@ -551,10 +610,15 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
           padrão para a instalação. Digite <code>yes</code> e pressione enter para
           adicionar Anaconda ao seu <code>PATH</code> (isso irá tornar Anaconda
           seu interpretador Python padrão).
-	</li>
+        </li>
       </ol>
     </div>
   </div>
+  <p>
+  Once you are done installing the software listed above,
+  please go to <a href="setup/index.html">this page</a>,
+  which has instructions on how to test that everything was installed correctly.
+  </p>
 </div> <!-- End of 'Python' section. -->
 
 <div id="r"> <!-- Start of 'R' section. -->
@@ -571,32 +635,32 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     <div class="col-md-4">
       <h4 id="r-windows">Windows</h4>
       <p>
-	Instale R baixando e rodando
-	<a href="http://cran.r-project.org/bin/windows/base/release.htm">este arquivo .exe</a>
-	disponível no <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Além disso, por favor instale o
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+        Instale R baixando e rodando
+        <a href="http://cran.r-project.org/bin/windows/base/release.htm">este arquivo .exe</a>
+        disponível no <a href="http://cran.r-project.org/index.html">CRAN</a>.
+        Além disso, por favor instale o
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="r-macosx">Mac OS X</h4>
       <p>
-	Instale o R baixando e rodando
-	<a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">este arquivo .pkg</a>
-	disponível no <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Além disso, por favor instale o
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+        Instale o R baixando e rodando
+        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">este arquivo .pkg</a>
+        disponível no <a href="http://cran.r-project.org/index.html">CRAN</a>.
+        Além disso, por favor instale o
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="r-linux">Linux</h4>
       <p>
-	Você pode baixar os arquivos binários para sua distribuição particular
-	em <a href="http://cran.r-project.org/index.html">CRAN</a>. Ou
-	você pode utilizar seu "package manager" (e.g. para Debian/Ubuntu
-	rode <code>sudo apt-get install r-base</code> e para Fedora rode
+        Você pode baixar os arquivos binários para sua distribuição particular
+        em <a href="http://cran.r-project.org/index.html">CRAN</a>. Ou
+        você pode utilizar seu "package manager" (e.g. para Debian/Ubuntu
+        rode <code>sudo apt-get install r-base</code> e para Fedora rode
         <code>sudo yum install R</code>). Além disso, por favor instale o
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
   </div>
@@ -616,25 +680,29 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     <div class="col-md-4">
       <h4 id="sql-windows">Windows</h4>
       <p>
-      O <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
-      instala o <code>sqlite3</code> para Windows.
-      Se você tiver utilizado o instalador para configurar o nano,
-      você não precisa instalá-lo novamente.
+        O <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
+        instala o SQLite para Windows.
+        Se você tiver utilizado o instalador para configurar o nano,
+        você não precisa instalá-lo novamente.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="sql-macosx">Mac OS X</h4>
       <p>
-	<code>sqlite3</code> é por padrão pré-instalado no Mac OS X.
+        SQLite é por padrão pré-instalado no Mac OS X.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="sql-linux">Linux</h4>
       <p>
-	<code>sqlite3</code> é por padrão pré-instalado no Linux.
+        SQLite é por padrão pré-instalado no Linux.
       </p>
     </div>
   </div>
+
+  <p><strong>Se você instalou Anaconda, ele possui uma cópia do SQLite
+    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">sem suporte ao<code>readline</code></a>.
+    Instrutores irão fornecer instruções de como contornar essa limitação caso seja necessário.</strong></p>
 </div> <!-- End of 'SQLite' section. -->
 
 <!--

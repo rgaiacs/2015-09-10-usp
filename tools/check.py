@@ -14,9 +14,9 @@ import yaml
 from collections import Counter
 
 try:  # Hack to make codebase compatible with python 2 and 3
-    basestring
+    our_basestring = basestring
 except NameError:
-    basestring = str
+    our_basestring = str
 
 __version__ = '0.6'
 
@@ -37,7 +37,7 @@ logger.addHandler(console_handler)
 
 # TODO: these regexp patterns need comments inside
 EMAIL_PATTERN = r'[^@]+@[^@]+\.[^@]+'
-HUMANTIME_PATTERN = r'((0?\d|1[0-1]):[0-5]\d(am|pm)(-|to)(0?\d|1[0-1]):[0-5]\d(am|pm))|((0?\d|1\d|2[0-3]):[0-5]\d(-|to)(0?\d|1\d|2[0-3]):[0-5]\d)'
+HUMANTIME_PATTERN = r'((0?[1-9]|1[0-2]):[0-5]\d(am|pm)(-|to)(0?[1-9]|1[0-2]):[0-5]\d(am|pm))|((0?\d|1\d|2[0-3]):[0-5]\d(-|to)(0?\d|1\d|2[0-3]):[0-5]\d)'
 EVENTBRITE_PATTERN = r'\d{9,10}'
 URL_PATTERN = r'https?://.+'
 
@@ -147,7 +147,7 @@ def look_for_fixme(func):
     '''Decorator to fail test if text argument starts with "FIXME".'''
     def inner(arg):
         if (arg is not None) and \
-           isinstance(arg, basestring) and \
+           isinstance(arg, our_basestring) and \
            arg.lstrip().startswith('FIXME'):
             return False
         return func(arg)
@@ -358,7 +358,7 @@ def check_validity(data, function, errors, error_msg):
 
 
 def check_blank_lines(raw_data, errors, error_msg):
-    '''Check for blank line in category headers.'''
+    '''Blank lines are not allowed in category headers.'''
     lines = [x.strip() for x in raw_data.split('\n')]
     if '' in lines:
         add_error(error_msg, errors)
@@ -387,7 +387,7 @@ def get_header(text):
 
     # YAML header must start and end with '---'
     pieces = text.split('---')
-    if len(pieces) < 2:
+    if len(pieces) < 3:
         return None, None
 
     # Return raw text and YAML-ized form.
