@@ -306,56 +306,6 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
   <a href="https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">página wiki "Configuration Problems and Solutions"</a>.
 </p>
 
-<div id="editor"> <!-- Start of 'editor' section. -->
-  <h3>Editor</h3>
-  <p>
-    Quando você está escrevendo um código, é interessante ter um editor de
-    texto otimizado para a escrita de código, com funcionalidades como
-    utilização de cores para palavras chaves. O editor padrão no Mac OS X e
-    Linux é o Vim, que não é famoso por ser intuitivo.
-    Se você acidentalmente encontrar-se preso nele,
-    tente pressionar <code>ESC</code>, digitar <code>:q!</code> e pressionar <code>ENTER</code>
-    para retornar à linha de comando.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="editor-windows">Windows</h4>
-      <p>
-        <code>nano</code> é o editor instalado pelo instalador da Software
-        Carpentry. Ele é um editor básico utilizado nas lições.
-      </p>
-      <p>
-        <a href="http://notepad-plus-plus.org/">Notepad++</a> é outro popular
-        editor livre para Windows. Depois de instalá-lo você precisa adicionar o
-        diretório onde ele foi instalado no <em>path</em> do seu sistema para que
-        possa invocá-lo pela linha de comando (ou para que outros programas como
-        Git invoque-o por você). Por favor requisite ajuda dos instrutores para
-        fazer isso.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-macosx">Mac OS X</h4>
-      <p>
-        Nos recomendamos
-        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> ou
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-        Você também pode utilizar o <code>nano</code> que deveria estar instalado
-        por padrão.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-linux">Linux</h4>
-      <p>
-        <a href="http://kate-editor.org/">Kate</a> é uma das várias opções para os
-        usuários de Linux.
-        Você também pode utilizar <code>nano</code> que deveria estar
-        pré-instalado.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'editor' section. -->
-
 <div id="shell"> <!-- Start of 'shell' section. -->
   <h3>Bash Shell</h3>
 
@@ -383,18 +333,6 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
         Após a instalação você terá disponível no seu computador
         tanto o Git como o Bash.
       </p>
-      <h4>Instalador da Software Carpentry</h4>
-      <p>Ele instala e configura o <code>nano</code> (<a href="{{site.swc_github}}/windows-installer">e outras coisas</a>)</p>
-      <p><em>Esse instalador precisa que uma conexão de internet.</em></p>
-      <p>Depois de instalar Git Bash:</p>
-      <ul>
-        <li>
-          Baixe <a href="{{site.windows_installer_path}}">Software Carpentry Windows Installer</a>.
-        </li>
-        <li>
-          Click duas vezes no arquivo para executá-lo.
-        </li>
-      </ul>
     </div>
     <div class="col-md-4">
       <h4 id="shell-macosx">Mac OS X</h4>
@@ -474,56 +412,64 @@ eventbrite: # optional (delete this if not used, otherwise uncomment and provide
   <h3>Text Editor</h3>
 
   <p>
-    When you're writing code, it's nice to have a text editor that is
-    optimized for writing code, with features like automatic
-    color-coding of key words.  The default text editor on Mac OS X and
-    Linux is usually set to Vim, which is not famous for being
-    intuitive.  if you accidentally find yourself stuck in it, try
-    typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
-    exclamation mark), then hitting Return to return to the shell.
+    Quando você está escrevendo um código, é interessante ter um editor de
+    texto otimizado para a escrita de código, com funcionalidades como
+    utilização de cores para palavras chaves. O editor padrão no Mac OS X e
+    Linux é o Vim, que não é famoso por ser intuitivo.
+    Se você acidentalmente encontrar-se preso nele,
+    tente pressionar <code>ESC</code>, digitar <code>:q!</code> e pressionar <code>ENTER</code>
+    para retornar à linha de comando.
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        To install it, 
-        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
-        and double click on the file to run it.
-        <strong>This installer requires an active internet connection.</strong>
+        nano é um editor de texto básico
+        e o que os instrutores utilizam por padrão nesse workshop.
+        Para instalá-lo,
+        baixe o <a
+          href="http://files.software-carpentry.org/SWCarpentryInstaller.exe">Software
+          Carpentry Windows installer</a>
+        e execute-o através de um clique duplo.
+        <strong>Esse instalador requer uma conexão de internet ativa.</strong>
       </p>
       <p>
-        Others editors that you can use are
-        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
+        Outros editores que você pode utilizar são
+        <a href="http://notepad-plus-plus.org/">Notepad++</a> ou
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
-        <strong>Be aware that you must
-          add its installation directory to your system path.</strong>
-        Please ask your instructor to help you do this.
+        <strong>
+          Você irá precisar adicionar
+          o diretório onde esses editores de texto foram instalados
+          no caminho de aplicações do seu sistema.
+        </strong>
+        Peça a ajuda de um instrutor para fazer isso se necessitar.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="editor-macosx">Mac OS X</h4>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
+        nano é um editor de texto básico
+        e o que os instrutores utilizam por padrão nesse workshop.
+        Ele deve estar pré-instalado na sua máquina.
       </p>
       <p>
-        Others editors that you can use are
-        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
+        Outros editores que também podem ser utilizados são
+        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> ou
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="editor-linux">Linux</h4>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
+        nano é um editor de texto básico
+        e o que os instrutores utilizam por padrão nesse workshop.
+        Ele deve estar pré-instalado na sua máquina.
       </p>
       <p>
-        Others editors that you can use are
+        Outros editores que também pode ser utilizados são
         <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
-        <a href="http://kate-editor.org/">Kate</a> or
+        <a href="http://kate-editor.org/">Kate</a> ou
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
     </div>
