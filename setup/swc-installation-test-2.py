@@ -70,9 +70,9 @@ CHECKS = [
     'virtual-browser',
 # Version control
     'git',
-    'hg',              # Command line tool
+    #'hg',              # Command line tool
     #'mercurial',       # Python package
-    'EasyMercurial',
+    #'EasyMercurial',
 # Build tools and packaging
     'make',
     'virtual-pypi-installer',
@@ -98,7 +98,7 @@ CHECKS = [
     'sympy',
     'Cython',
     'networkx',
-    'mayavi.mlab',
+    #'mayavi.mlab',
     ]
 
 CHECKER = {}
@@ -138,8 +138,8 @@ class DependencyError (Exception):
         ('Linux', '*', 'gedit'): 'http://www.linuxfromscratch.org/blfs/view/svn/gnome/gedit.html',
         ('*', '*', 'git'): 'http://git-scm.com/downloads',
         ('*', '*', 'google-chrome'): 'https://www.google.com/intl/en/chrome/browser/',
-        ('*', '*', 'hg'): 'http://mercurial.selenic.com/',
-        ('*', '*', 'mercurial'): 'http://mercurial.selenic.com/',
+        #('*', '*', 'hg'): 'http://mercurial.selenic.com/',
+        #('*', '*', 'mercurial'): 'http://mercurial.selenic.com/',
         ('*', '*', 'IPython'): 'http://ipython.org/install.html',
         ('*', '*', 'ipython'): 'http://ipython.org/install.html',
         ('*', '*', 'jinja'): 'http://jinja.pocoo.org/docs/intro/#installation',
@@ -148,7 +148,7 @@ class DependencyError (Exception):
         ('Darwin', '*', 'matplotlib'): 'http://matplotlib.org/users/installing.html#building-on-osx',
         ('Windows', '*', 'matplotlib'): 'http://matplotlib.org/users/installing.html#installing-on-windows',
         ('*', '*', 'matplotlib'): 'http://matplotlib.org/users/installing.html#installing',
-        ('*', '*', 'mayavi.mlab'): 'http://docs.enthought.com/mayavi/mayavi/installation.html',
+        #('*', '*', 'mayavi.mlab'): 'http://docs.enthought.com/mayavi/mayavi/installation.html',
         ('*', '*', 'nano'): 'http://www.nano-editor.org/dist/latest/faq.html#3',
         ('*', '*', 'networkx'): 'http://networkx.github.com/documentation/latest/install.html#installing',
         ('*', '*', 'nose'): 'https://nose.readthedocs.org/en/latest/#installation-and-quick-start',
@@ -698,7 +698,7 @@ for package,name,long_name,minimum_version,and_dependencies in [
         ('sympy', None, 'SymPy', None, None),
         ('Cython', None, None, None, None),
         ('networkx', None, 'NetworkX', None, None),
-        ('mayavi.mlab', None, 'MayaVi', None, None),
+        #('mayavi.mlab', None, 'MayaVi', None, None),
         ('setuptools', None, 'Setuptools', None, None),
         ]:
     if not name:
